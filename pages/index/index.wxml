@@ -1,0 +1,35 @@
+<swiper indicator-dots="false" autoplay="auto" interval="3000" duration="1000"   circular="true" class='banner' indicator-active-color="#fff">
+  <block wx:for="{{imgUrls}}" wx:key="{{item.id}}">
+    <swiper-item>
+      <image src="{{item.image}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='home-first-warp' wx:for="{{accordTotal}}" wx:key="{{item.rooms}}">
+  <view class='title' data-index='{{item}}' bindtap='jumpPage'>
+    <view>
+      <image class='left-ico' src='{{item.icon}}'></image>
+      <text class='name'>{{item.name}}</text>
+    </view>
+    <image class='right-ico' src='/images/right.png'></image>
+  </view>
+  <view class='information'>
+    <view class='data'wx:for="{{item.streams}}" wx:key="{{item.room.id}}" bindtap='passRoomId' data-index='{{item}}'>
+      <image class='img' src='{{item.snapshot}}'></image>
+      <view class='footer'>
+        <image src='{{item.room.avatar}}'></image>
+        <view class='message'>
+          <view class='type'>{{item.room.name}}</view>
+          <view class='type type-bottom'>{{item.room.title}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<swiper indicator-dots="false" autoplay="auto" interval="3000" duration="1000"   circular="true" class='banner' indicator-active-color="#fff" vertical="true">
+  <block wx:for="{{advertsArray}}" wx:key="{{item.id}}">
+    <swiper-item>
+      <image src="{{item.image}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>

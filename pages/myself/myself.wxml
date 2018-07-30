@@ -1,0 +1,21 @@
+<view wx:if="{{confirmLanding}}">
+  <view class='myself'>
+    <open-data type="groupName" open-gid="xxxxxx" class="common"></open-data>
+    <open-data type="userAvatarUrl" class="ico"></open-data>
+    <open-data type="userNickName" class="common"></open-data>
+    <open-data type="userGender" class="common"></open-data>
+    <open-data type="userCity" class="common"></open-data>
+    <open-data type="userProvince" class="common"></open-data>
+    <open-data type="userCountry" class="common"></open-data>
+    <open-data type="userLanguage" class="common"></open-data>
+  </view>
+  <button type="default" class="logged-out" bindtap="loggedOut">退出登陆     </button>
+</view>
+<view wx:else>
+  <image class='head-icon' src='/images/head-icon.png'></image>
+  <text class='prompt'>您还未登录</text>
+  <view class='msg' bindtap='login'>
+    <image src='/images/wechat.png'></image>
+    使用微信账户登录
+  </view>
+</view>

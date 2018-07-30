@@ -1,0 +1,12 @@
+<scroll-view scroll-y="true">
+  <view class="flex-wrp">
+    <view class="flex-item" wx:for="{{listArray}}" wx:key="{{item.id}}">
+      <view class='game-content-box'>
+        <navigator url="/pages/list/list?id={{item.id}}&name={{item.name}}">
+          <image src="{{item.icon}}" lazy-load="true"></image>
+          <text>{{item.name}}</text>
+        </navigator> 
+      </view>
+    </view>
+  </view> 
+</scroll-view>

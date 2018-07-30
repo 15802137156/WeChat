@@ -1,0 +1,71 @@
+page{
+  background: #f3f4f6;
+}
+.home-first-warp{
+  padding: 20rpx;
+}
+.title{
+  height: 56rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+  font-size: 30rpx;
+  line-height: 56rpx;
+}
+.left-ico{
+  display: block;
+  height: 56rpx;
+  width: 56rpx;
+  float: left;
+  margin-right: 10rpx;
+}
+.right-ico{
+  display: block;
+  height: 56rpx;
+  width: 56rpx;
+}
+.information{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.data{
+  width: 340rpx;
+}
+.data .img{
+  display: block;
+  width: 100%;
+  height: 250rpx;
+}
+.footer{
+  height: 110rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer image{
+  width: 70rpx;
+  height: 70rpx;
+  display: block;
+  border-radius: 100%;
+}
+.message{
+  width: 120px;
+}
+.message .type{
+  height: 50%;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #ccc;
+  font-size: 24rpx;
+  line-height: 1.5;
+}
+.message .type-bottom{
+  color: #333;
+}

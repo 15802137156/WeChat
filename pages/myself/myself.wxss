@@ -1,0 +1,54 @@
+.myself{
+  width: 100%;
+}
+.myself .ico{
+  display: block;
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 100%;
+  margin: 50rpx auto;
+}
+.myself .common{
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-top: 30rpx;
+}
+.logged-out{
+  border: 1px solid #fff;
+  margin-top: 40rpx;
+  font-size: 40rpx;
+  color: #f00;
+}
+.head-icon{
+  width: 200rpx;
+  height: 200rpx;
+  display: block;
+  border-radius: 100%;
+  margin: 40rpx auto;
+}
+.prompt{
+  width: 100%;
+  text-align: center;
+  font-size: 36rpx;
+  color: #ccc;
+  display: block;
+}
+.msg{
+  width: 400rpx;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60rpx auto;
+  border-radius: 10px;
+  border: 2rpx solid #51d119;
+  font-size: 30rpx;
+  color: #51d119;
+}
+.msg image{
+  display: block;
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 20rpx;
+}

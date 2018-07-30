@@ -1,0 +1,14 @@
+<view class='home-first-warp'>
+  <view class='information'>
+    <view class='data'wx:for="{{listArray}}" wx:key="{{item.room.id}}" bindtap='passRoomId' data-index='{{item}}'>
+      <image class='img' src='{{item.snapshot}}'></image>
+      <view class='footer'>
+        <image src='{{item.room.avatar}}'></image>
+        <view class='message'>
+          <view class='type'>{{item.room.name}}</view>
+          <view class='type type-bottom'>{{item.room.title}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

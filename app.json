@@ -26,7 +26,7 @@
       "selectedIconPath": "images/live-active.png"
     },{
       "pagePath": "pages/game/game",
-      "text": "娱乐",
+        "text": "游戏",
       "iconPath": "images/game.png",
       "selectedIconPath": "images/game-active.png"
     },{

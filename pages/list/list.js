@@ -67,7 +67,7 @@ Page({
    * 页面上拉触底事件的处理函数 （下拉加载）
    */
   onReachBottom: function () {
-    if (this.data.startIndex <= this.data.listArray.length) {
+    if (this.data.startIndex <= this.data.listArray.length - 30) {
       this.setData({
         startIndex: this.data.startIndex += 30
       });
